@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="{% static 'polls/custom.css' %}">
 
     <ul>
-    {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    {% for movie in latest_question_list %}
+        <li><a href="{% url 'polls:detail' movie.id %}">{{ movie.title }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
